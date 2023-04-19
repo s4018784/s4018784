@@ -2,19 +2,31 @@
 <html>
     
     <head>
-    <title>Icon Template Square</title>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
         
         <style>
             .row{
-                width:720px;
-                margin: 10px auto 10px auto ;
+                margin-top:40px;
             }
-            .image-container {
+            .left-column{
+                float:left;
+                width:30%;
+                margin-left:30px;
+            }
+            .center-column{
+                width:30%;
+                margin:auto;
+            }
+            .right-column{
+                float:right;
+                width:30%;
+                margin:auto;
+            }
+            .image-container{
                 display: table-cell;
                 vertical-align: middle;
-                padding:20px;
+                margin: auto;
             }
         </style>
     </head>
@@ -22,33 +34,33 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="img1" src="img/cir.png" onmouseover="this.src='img/hex.png';" onmouseout="this.src='img/cir.png';" height="200" width="200"/></div>
-            <div class="image-container"><img id="img2" src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="img3" src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img1" src="img/C1.png" onmouseover="this.src='img/C2.png';" onmouseout="this.src='img/C1.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="img2" src="img/S1.png" onmouseover="this.src='img/S2.png';" onmouseout="this.src='img/S1.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="img3" src="img/M1.png" onmouseover="this.src='img/M2.png';" onmouseout="this.src='img/M1.png';" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img id="img4" src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="img5" src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="img6" src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img4" src="img/B1.png" onmouseover="this.src='img/B2.png';" onmouseout="this.src='img/B1.png';" height="250" width="200"/></div>
+            <div class="image-container"><img id="img5" src="img/H1.png" onmouseover="this.src='img/H2.png';" onmouseout="this.src='img/H1.png';" height="240" width="200"/></div>
+            <div class="image-container"><img id="img6" src="img/T1.png" onmouseover="this.src='img/T2.png';" onmouseout="this.src='img/T1.png';" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img id="img7" src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="img8" src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="img9" src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="img7" src="img/MY1.png" onmouseover="this.src='img/MY2.png';" onmouseout="this.src='img/MY1.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="img7" src="img/BO1.png" onmouseover="this.src='img/BO2.png';" onmouseout="this.src='img/BO1.png';" height="270" width="190"/></div>
+            <div class="image-container"><img id="img9" src="img/D1.png" onmouseover="this.src='img/D2.png';" onmouseout="this.src='img/D1.png';" height="200" width="200"/></div>
         </div>
         
         <script>
-            var sound1 = new buzz.sound("sound/glitch1.mp3");
-            var sound2 = new buzz.sound("sound/glitch2.mp3");
-            var sound3 = new buzz.sound("sound/glitch3.mp3");
-            var sound4 = new buzz.sound("sound/glitch1.mp3");
-            var sound5 = new buzz.sound("sound/glitch2.mp3");
-            var sound6 = new buzz.sound("sound/glitch3.mp3");
-            var sound7 = new buzz.sound("sound/glitch1.mp3");
-            var sound8 = new buzz.sound("sound/glitch2.mp3");
-            var sound9 = new buzz.sound("sound/glitch3.mp3");
+            var sound1 = new buzz.sound("sound/static.wav");
+            var sound2 = new buzz.sound("sound/radio.wav");
+            var sound3 = new buzz.sound("sound/alarm.mp3");
+            var sound4 = new buzz.sound("sound/static.wav");
+            var sound5 = new buzz.sound("sound/radio.wav");
+            var sound6 = new buzz.sound("sound/alarm.mp3");
+            var sound7 = new buzz.sound("sound/static.wav");
+            var sound8 = new buzz.sound("sound/radio.wav");
+            var sound9 = new buzz.sound("sound/alarm.mp3");
      
             window.onload = function() {
                 document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
